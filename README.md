@@ -591,7 +591,7 @@ Want to help? Check the issues page or submit a PR!
 
 - **Status:** Production Ready ✅
 - **Version:** 1.0.0
-- **Last Updated:** January 2025
+- **Last Updated:** October 2025
 - **Production URL:** [https://marka-proof.org](https://marka-proof.org)
 
 ---
