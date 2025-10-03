@@ -31,8 +31,9 @@ const nextConfig: NextConfig = {
         source: '/(.*)',
         headers: [
           {
-            key: 'X-Frame-Options',
-            value: 'DENY',
+            // Allow framing from Telegram domains for Mini App
+            key: 'Content-Security-Policy',
+            value: "frame-ancestors 'self' https://web.telegram.org https://telegram.org https://*.telegram.org",
           },
           {
             key: 'X-Content-Type-Options',
