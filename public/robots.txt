@@ -1,0 +1,14 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /debug-wallet/
+Disallow: /test-step-3/
+Disallow: /onboarding/
+Disallow: /profile/
+Disallow: /proofs/
+Disallow: /social/
+
+Sitemap: https://marka-proof.org/sitemap.xml
+

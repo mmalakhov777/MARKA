@@ -1,0 +1,76 @@
+{
+  "name": "Marka - Blockchain Content Authentication",
+  "short_name": "Marka",
+  "description": "Register and verify content authenticity on the TON blockchain",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fffef9",
+  "theme_color": "#171717",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/og-image.jpg",
+      "sizes": "455x455",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "/og-image.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/og-image.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/og-image.jpg",
+      "sizes": "180x180",
+      "type": "image/jpeg",
+      "purpose": "apple touch icon"
+    }
+  ],
+  "categories": ["utilities", "productivity", "business"],
+  "shortcuts": [
+    {
+      "name": "Upload Content",
+      "short_name": "Upload",
+      "description": "Register new content on blockchain",
+      "url": "/",
+      "icons": [
+        {
+          "src": "/og-image.jpg",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "My Proofs",
+      "short_name": "Proofs",
+      "description": "View your registered content",
+      "url": "/proofs",
+      "icons": [
+        {
+          "src": "/og-image.jpg",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "FAQ",
+      "short_name": "FAQ",
+      "description": "Learn how Marka works",
+      "url": "/faq",
+      "icons": [
+        {
+          "src": "/og-image.jpg",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}
+

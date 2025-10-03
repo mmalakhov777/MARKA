@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: tnpfw221
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NEXT_PUBLIC_TONSCAN_BASE_URL
+        value: https://testnet.tonscan.org/tx
+      - key: TONCENTER_ENDPOINT
+        value: https://testnet.toncenter.com/api/v2/jsonRPC
+      # CRITICAL: Add these in Render dashboard - app will crash without them
+      # - key: DATABASE_URL
+      #   sync: false
+      # - key: TON_WALLET_ADDRESS
+      #   sync: false
+      # - key: TON_WALLET_SEED
+      #   sync: false
+      # - key: TONCENTER_API_KEY
+      #   sync: false
+      # - key: NEXT_PUBLIC_TON_WALLET_ADDRESS
+      #   sync: false
+      # - key: NEXT_PUBLIC_PROOF_AMOUNT
+      #   value: "0.05"
