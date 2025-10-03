@@ -2,7 +2,7 @@
 
 > **Register your content on TON blockchain. Your wallet. Your proof. Forever.**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL%203.0-blue.svg)](LICENSE)
 [![Next.js](https://img.shields.io/badge/Next.js-15-black)](https://nextjs.org/)
 [![TON](https://img.shields.io/badge/TON-Blockchain-0088CC)](https://ton.org/)
 
@@ -367,7 +367,7 @@ marka/
 ├── public/                     # Static assets
 ├── scripts/                    # Database migration scripts
 ├── env.example                 # Environment variables template
-├── LICENSE                     # MIT License
+├── LICENSE                     # AGPL-3.0 License
 ├── README.md                   # This file
 └── package.json               # Dependencies
 ```
@@ -532,14 +532,18 @@ We welcome contributions! Here's how you can help:
 
 ## 📄 License
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **GNU Affero General Public License v3.0 (AGPL-3.0)** - see the [LICENSE](LICENSE) file for details.
 
 **What this means:**
 - ✅ You can use this code commercially
 - ✅ You can modify and distribute
 - ✅ You can use privately
-- ✅ You must include the license
+- 🔒 **All forks and modifications MUST remain open source**
+- 🔒 **If you run this as a network service, you MUST make the source code available to users**
+- ✅ You must include the license and copyright notices
 - ⚠️ No warranty provided (use at your own risk)
+
+**Why AGPL-3.0?** This copyleft license ensures that all derivatives and hosted versions of this software remain open source, protecting the freedom of the community.
 
 ---
 
