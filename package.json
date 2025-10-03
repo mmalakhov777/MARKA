@@ -16,6 +16,7 @@
   "dependencies": {
     "@tanstack/react-query": "^5.90.2",
     "@tanstack/react-query-devtools": "^5.90.2",
+    "@telegram-apps/analytics": "^1.4.4",
     "@telegram-apps/sdk-react": "^3.3.7",
     "@ton/crypto": "^3.3.0",
     "@tonconnect/ui-react": "^2.3.1",

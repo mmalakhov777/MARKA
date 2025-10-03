@@ -2,9 +2,27 @@
 
 import { type PropsWithChildren, useEffect } from "react";
 import { init, miniApp, viewport, closingBehavior, swipeBehavior } from "@telegram-apps/sdk-react";
+import TelegramAnalytics from "@telegram-apps/analytics";
+
+// Get env vars at module level for client components
+const ANALYTICS_TOKEN = process.env.NEXT_PUBLIC_TG_ANALYTICS_TOKEN;
+const ANALYTICS_APP_NAME = process.env.NEXT_PUBLIC_TG_ANALYTICS_APP_NAME;
 
 export function TelegramSDKProvider({ children }: PropsWithChildren) {
   useEffect(() => {
+    // Initialize Telegram Analytics FIRST (works even outside Telegram)
+    if (typeof window !== "undefined" && ANALYTICS_TOKEN && ANALYTICS_APP_NAME) {
+      try {
+        TelegramAnalytics.init({
+          token: ANALYTICS_TOKEN,
+          appName: ANALYTICS_APP_NAME,
+        });
+        console.log("✅ Telegram Analytics initialized");
+      } catch (analyticsError) {
+        console.error("Failed to initialize Telegram Analytics:", analyticsError);
+      }
+    }
+
     // Initialize Telegram SDK
     try {
       init();
