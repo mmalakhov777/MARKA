@@ -4,9 +4,11 @@ import { useWalletAuth } from "@/lib/wallet-auth";
 import { User, Crown, Loader2, Wallet } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { useTonConnectUI } from "@tonconnect/ui-react";
 
 export function UserProfile() {
   const { user, isLoading, isGuest, hasTelegram, error } = useWalletAuth();
+  const [tonConnectUI] = useTonConnectUI();
 
   if (isLoading) {
     return (
@@ -36,15 +38,15 @@ export function UserProfile() {
   // Guest user
   if (isGuest) {
     return (
-      <Link 
-        href="/profile"
-        className="group flex items-center gap-3 transition-all hover:opacity-70"
+      <button 
+        onClick={() => tonConnectUI.openModal()}
+        className="group flex items-center gap-3 transition-all hover:opacity-70 cursor-pointer"
       >
         <div className="flex h-9 w-9 items-center justify-center rounded-full bg-neutral-100">
           <User className="h-4 w-4 text-neutral-600" />
         </div>
         
-        <div className="flex flex-1 flex-col">
+        <div className="flex flex-1 flex-col text-left">
           <span className="text-sm font-medium text-neutral-900">
             Guest User
           </span>
@@ -52,7 +54,7 @@ export function UserProfile() {
             Connect wallet to continue
           </span>
         </div>
-      </Link>
+      </button>
     );
   }
 
