@@ -414,7 +414,7 @@ Contributors are recognized in:
 
 ## ⚖️ License
 
-By contributing, you agree that your contributions will be licensed under the MIT License.
+By contributing, you agree that your contributions will be licensed under the AGPL-3.0 License.
 
 ---
 
@@ -430,5 +430,5 @@ Whether it's code, documentation, bug reports, or ideas - we appreciate your tim
 
 **Questions?** Open a Discussion or reach out to maintainers.
 
-**Last Updated:** January 2025
+**Last Updated:** October 2025
 
